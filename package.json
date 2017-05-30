@@ -1,10 +1,9 @@
 {
   "name": "userauthenticationservice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Authentication service used with the BlueJay App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
@@ -18,12 +17,11 @@
   },
   "homepage": "https://github.com/harimau777/userAuthorizationService#readme",
   "dependencies": {
-    "express-session": "^1.14.1",
-    "mongoose": "^4.6.1",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
-    "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4"
   }
 }
