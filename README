@@ -1,0 +1,12 @@
+Deployment:
+1. Rename auth.js.example to auth.js and fill in the clientID and clientSecret fields for each login method.
+2. Replace the placeholder session secret ('mySecret') in index.js.
+3. If necessary, change the port and hostname for app.listen in index.js.
+4. Run npm install
+5. Run npm start
+
+Testing:
+After the service has been deployed, it can be tested by navigating to localhost:8080 (or whatever hostname and port was set in step 3 of deployment.
+This will load a test page that will allow you to verify that the settings that you configured during deployment are correct.
+However, note that upon a successful login the server will attempt to redirect you to the appropriate page in the Blue Jay app.
+This redirect will fail if the Blue Jay app has not actually been deployed.

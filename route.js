@@ -14,7 +14,6 @@ module.exports = (app, passport) => {
     failureRedirect : '/login/google/failure'
   }));
   app.get('/login/google/success', (req, res) => {res.send({ message: 'success', data: JSON.stringify(req.user) })});
-  // app.get('/login/google/success', (req, res) => {res.send({message: 'success', data: JSON.stringify(req['user']['google'])})});
   app.get('/login/google/failure', (req, res) => {res.send({message: 'failure'})});
 
   //Facebook:
